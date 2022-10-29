@@ -11,7 +11,7 @@ function css(done){
     //1.- Identificar archivo, 2.- Compilar, 3.- Guardar
     src('src/scss/app.scss')
     .pipe( sourcemaps.init() )
-        .pipe( sass({outputStyle: 'compressed'}) )
+        .pipe( sass({outputStyle:'compressed'}) )
         .pipe( postcss([ autoprefixer() ]))
         .pipe( sourcemaps.write('.'))
         .pipe( dest('build/css') )
