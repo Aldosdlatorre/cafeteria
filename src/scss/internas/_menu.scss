@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as mix;
+
+
+.contenido-menu{
+
+    .menu-imagen img{
+        display: none;
+    }
+
+    @include mix.desktop { 
+         display: flex;
+         align-items:center;
+         gap: 2rem;
+         .menu-imagen img{
+            margin-bottom: -12rem;
+            display: block;
+         } 
+         
+    }
+
+    .menu-imagen{
+        margin-bottom: 4rem;
+    }
+
+    .menu-texto,
+    .menu-imagen{
+        flex: 1;
+    }
+}

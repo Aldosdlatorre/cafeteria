@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as mix;
+ 
+.contenido-principal{
+    background-color: v.$blanco;
+    padding: 5rem 2rem;
+    @include mix.tablet { 
+         padding: 8rem;
+         margin-top: -10rem;
+         position: relative;
+    }
+  
+}
+
+.experiencia{
+    margin: 5rem 0;
+}
